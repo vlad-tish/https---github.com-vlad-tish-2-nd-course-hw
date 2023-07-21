@@ -50,6 +50,11 @@ body {
         align-items: center;
         justify-content: center;
         margin-top: 12px;
+        transition: all .3s;
+
+        &:hover {
+            background: #770a2a;
+        }
     }
 }
 

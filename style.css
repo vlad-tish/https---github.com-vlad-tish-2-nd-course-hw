@@ -49,6 +49,10 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 12px;
+  transition: all 0.3s;
+}
+.header__link:hover {
+  background: #770a2a;
 }
 
 .title {
