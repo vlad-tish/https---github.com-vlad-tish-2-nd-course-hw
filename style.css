@@ -53,6 +53,7 @@ body {
 }
 .header__link:hover {
   background: #770a2a;
+  color: #fff;
 }
 
 .title {
