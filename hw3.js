@@ -72,7 +72,34 @@ switch (monthNumber) {
     case '12':
         console.log('Зима'); 
         break;
-    default: console.log('Боже, ты чего? Месяцев всего 12!');
+    default: console.log('Ты чего? Месяцев всего 12!');
         break;
 }
 // 
+
+// Задание 7
+let f = (prompt('Пожалуйста, введите любое число'));
+console.log(isNaN(f));
+if (f % 2 === 0) {
+    alert('Число четное');
+} else if (f % 2 > 0) {
+    alert('Число нечетное');
+}
+// 
+
+// Задание 8, Задание 9
+let clientOS = prompt('Каким устройством вы пользуетесь? 0 — iOS, 1 — Android');
+let clientOSdate = prompt('Пожалуйста, укажите дату выпуска устройства');
+let dateYear = 2015
+if (clientOS == 0 && clientOSdate < dateYear) {
+    console.log('Установите облегченную версию приложения для iOS по ссылке');
+} else if (clientOS == 1 && clientOSdate < dateYear) {
+    console.log('Установите облегченную версию приложения для Android по ссылке');
+} else if (clientOS == 0 && clientOSdate >= dateYear) {
+    console.log('Установите версию приложения для iOS по ссылке');
+} else if (clientOS == 1 && clientOSdate >= dateYear) {
+    console.log('Установите версию приложения для Android по ссылке');
+} else {
+    console.log('Некорректное значение')
+}
+//
