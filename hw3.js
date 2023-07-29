@@ -1,5 +1,5 @@
 // Задание 1
-let password = ('домашка');
+let password = ('пароль');
 let reply = prompt('Введите пароль');
 if (reply.toLowerCase() === password) {
     console.log('Пароль введен верно');

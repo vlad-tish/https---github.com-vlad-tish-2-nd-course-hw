@@ -70,12 +70,12 @@ body {
 
 .content {
     background-image: url(img/contentback.jpg);
-    height: 556px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     &__box-games {
+        padding-bottom: 128px;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 32px;
@@ -87,14 +87,15 @@ body {
         border-radius: 16px;
         grid-column: span 4;
         background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         color: #FFF;
         font-size: 24px;
         font-weight: 600;
         line-height: 32px;
         display: flex;
         align-items: flex-end;
-        padding-left: 32px;
-        padding-bottom: 32px;
+        position: relative;
 
         &_1 {
             background-image: url(img/game_1.jpg);
@@ -107,5 +108,14 @@ body {
         &_3 {
             background-image: url(img/game_3.jpg);
         }
+        
+        &_text {
+            position: absolute;
+            left: 32px;
+            bottom: 32px;
+        }
     }
 }
+
+@import 'tablet';
+@import 'mobile';
