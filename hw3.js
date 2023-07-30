@@ -24,60 +24,45 @@ if (d>100 || e>100) {
 // Задание 4
 let a = '2';
 let b = '3';
-alert(parseInt(a) + parseInt(b));
+alert(Number(a) + Number(b));
 // 
 
 // Задание 5
-let monthNumber = prompt('Введите номер месяца');
+let monthNumber = Number(prompt('Введите номер месяца'));
 switch (monthNumber) {
-    case '1':
+    case 12:
+    case 1:
+    case 2:
         console.log('Зима');
         break;
-    case '2':
-        console.log('Зима');
-        break;
-    case '3':
+    case 3:
+    case 4:
+    case 5:
         console.log('Весна');
         break;
-    case '4':
-        console.log('Весна');
-        break;
-    case '5':
-        console.log('Весна');
-        break;
-    case '6':
-        console.log('Лето'); 
-        break;
-    case '7':
+    case 6:
+    case 7:
+    case 8:
         console.log('Лето');
         break;
-    case '8':
-        console.log('Лето');
-        break;
-    case '9':
+    case 9:
+    case 10:
+    case 11:
         console.log('Осень');
-        break;
-    case '10':
-        console.log('Осень');
-        break;
-    case '11':
-        console.log('Осень');
-        break;
-    case '12':
-        console.log('Зима'); 
         break;
     default: console.log('Ты чего? Месяцев всего 12!');
-        break;
 }
 // 
 
 // Задание 7
-let f = (prompt('Пожалуйста, введите любое число'));
-console.log(isNaN(f));
+let f = Number(prompt('Пожалуйста, введите любое число'));
 if (f % 2 === 0) {
     alert('Число четное');
 } else if (f % 2 > 0) {
     alert('Число нечетное');
+} else {
+    console.log(isNaN(f));
+    alert('Это не число');
 }
 // 
 

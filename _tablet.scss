@@ -5,9 +5,15 @@
     }
     
     .content {
-        &__box-games{
+        &__box-games {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
+        }
+
+        &__game {
+            &:hover {
+                transform: scale(1.05);
+            }
         }
     }
 }

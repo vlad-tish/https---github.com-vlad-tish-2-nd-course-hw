@@ -33,6 +33,9 @@
 
         &__game {
             grid-column: span 4;
+            &:hover {
+                transform: scale(1.05);
+            }
 
             &_text {
                 left: 16px;

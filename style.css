@@ -92,6 +92,10 @@ body {
   display: flex;
   align-items: flex-end;
   position: relative;
+  transition: all 0.3s;
+}
+.content__game:hover {
+  transform: scale(1.1);
 }
 .content__game_1 {
   background-image: url(img/game_1.jpg);
@@ -116,6 +120,9 @@ body {
   .content__box-games {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+  }
+  .content__game:hover {
+    transform: scale(1.05);
   }
 }
 @media (max-width: 767px) {
@@ -146,6 +153,9 @@ body {
   }
   .content__game {
     grid-column: span 4;
+  }
+  .content__game:hover {
+    transform: scale(1.05);
   }
   .content__game_text {
     left: 16px;

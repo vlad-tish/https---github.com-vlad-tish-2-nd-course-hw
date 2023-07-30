@@ -96,6 +96,11 @@ body {
         display: flex;
         align-items: flex-end;
         position: relative;
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         &_1 {
             background-image: url(img/game_1.jpg);
