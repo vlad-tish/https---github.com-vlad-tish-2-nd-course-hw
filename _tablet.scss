@@ -1,0 +1,19 @@
+@media (min-width: 768px) and (max-width: 1220px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .content {
+        &__box-games {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        &__game {
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
