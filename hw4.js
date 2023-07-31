@@ -46,9 +46,8 @@ for (let n = 1000, num = 0; true; n /= 2) {
 //
 
 // Задание 6
-for (let dayFriday = 6; dayFriday <= 31; dayFriday++) { 
-      if (dayFriday % 6 == 0) {
-          alert(`Сегодня пятница, ${dayFriday}-е число. Необходимо подготовить отчет.`); 
-      }
+for (let dayFriday = 2; dayFriday <= 31; dayFriday += 7) { 
+          alert(`Сегодня пятница, ${dayFriday}-е число. Необходимо подготовить отчет.`);
+          console.log(`Сегодня пятница, ${dayFriday}-е число. Необходимо подготовить отчет.`);
   }
 // 
