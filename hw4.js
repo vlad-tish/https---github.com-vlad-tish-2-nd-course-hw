@@ -8,7 +8,7 @@ do {
 
 // Задание 2
 let a = 1;
-while(a<6) {
+while(a < 6) {
     console.log(a);
     a++;
 }
@@ -23,13 +23,31 @@ do {
 //
 
 //Задание 4
-while(true) {
-    let msg = prompt('Поговори с собой');
-    if(msg === 'continue') {
-        continue;
-    } 
-    if(msg === 'continue') {
-        break;
+const obj = {
+    'Коля': 200,
+    'Вася': 300,
+    'Петя': 400,
+}
+for (let worker in obj) {
+    alert(`${worker} - зарплата ${obj[worker]}`)
+}
+//
+
+//Задание 5
+for (let n = 1000, num = 0; true; n /= 2) {
+    if (n < 50) {
+    console.log(num);
+    alert(5);
+    break;
+    } else {
+        num++;
     }
 }
 //
+
+// Задание 6
+for (let dayFriday = 2; dayFriday <= 31; dayFriday += 7) { 
+          alert(`Сегодня пятница, ${dayFriday}-е число. Необходимо подготовить отчет.`);
+          console.log(`Сегодня пятница, ${dayFriday}-е число. Необходимо подготовить отчет.`);
+  }
+// 
