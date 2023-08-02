@@ -111,3 +111,32 @@ console.log(circle1.getPerimeter())
 console.log(circle2.getArea())
 console.log(circle2.getPerimeter())
 // 
+
+// Задание 8
+const seasons = () => {
+        let monthNumber = Number(prompt('Введите номер месяца.'));
+        if (monthNumber <= 0 || monthNumber >= 13 || isNaN(monthNumber)) {
+            return 'Неккоректное значение.'
+        } else {
+            switch (monthNumber) {
+                case 12:
+                case 1:
+                case 2:
+                    return 'Зима';
+                case 3:
+                case 4:
+                case 5:
+                    return 'Весна';
+                case 6:
+                case 7:
+                case 8:
+                    return 'Лето';
+                case 9:
+                case 10:
+                case 11:
+                    return 'Осень';
+            }
+        }
+}
+console.log(seasons());
+// 

@@ -37,12 +37,14 @@ body {
     }
 }
 
-.link {
+.btn {
+    border: none;
     border-radius: 30px;
     background: #9C0332;
     width: 234.063px;
     height: 48.603px;
     color: #FFF;
+    font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -88,7 +90,7 @@ body {
     &__game {
         box-sizing: border-box;
         height: 300px;
-        border-radius: 16px;
+        border-radius: 20px;
         grid-column: span 4;
         background-repeat: no-repeat;
         background-position: center;
