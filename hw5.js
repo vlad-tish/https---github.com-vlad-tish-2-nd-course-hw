@@ -95,7 +95,7 @@ function getPerimeter() {
 }
 
 const circle1 = {
-    radius: 1,
+    radius: 10,
     getArea: getArea,
     getPerimeter: getPerimeter,
 }
@@ -116,24 +116,29 @@ console.log(circle2.getPerimeter())
 const seasons = () => {
         let monthNumber = Number(prompt('Введите номер месяца.'));
         if (monthNumber <= 0 || monthNumber >= 13 || isNaN(monthNumber)) {
-            return 'Неккоректное значение.'
+            alert('Вы ввели что-то не то:(');
+            return 'Неккоректное значение.';
         } else {
             switch (monthNumber) {
                 case 12:
                 case 1:
                 case 2:
+                    alert(`Месяц номер ${monthNumber} относится к периоду Зима`);
                     return 'Зима';
                 case 3:
                 case 4:
                 case 5:
+                    alert(`Месяц номер ${monthNumber} относится к периоду Весна`);
                     return 'Весна';
                 case 6:
                 case 7:
                 case 8:
+                    alert(`Месяц номер ${monthNumber} относится к периоду Лето`);
                     return 'Лето';
                 case 9:
                 case 10:
                 case 11:
+                    alert(`Месяц номер ${monthNumber} относится к периоду Осень`);
                     return 'Осень';
             }
         }
