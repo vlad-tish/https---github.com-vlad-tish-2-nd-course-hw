@@ -35,27 +35,33 @@ body {
         font-weight: 300;
         line-height: 32px
     }
-    
-    &__link {
-        border-radius: 30px;
-        background: #9C0332;
-        width: 234.063px;
-        height: 48.603px;
-        color: #FFF;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 12px;
-        transition: all .3s;
+}
 
-        &:hover {
-            background: #4b071b;
-            color: #b6b3b3;
-        }
+.btn {
+    border: none;
+    border-radius: 30px;
+    background: #9C0332;
+    width: 234.063px;
+    height: 48.603px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    transition: all .3s;
+
+    &:hover {
+        background: #EB443F;
+        cursor: url(img/clarity_cursor-hand-linePNG.png), pointer;
+    }
+
+    &_margin {
+        margin: 0;
     }
 }
 
@@ -84,7 +90,7 @@ body {
     &__game {
         box-sizing: border-box;
         height: 300px;
-        border-radius: 16px;
+        border-radius: 20px;
         grid-column: span 4;
         background-repeat: no-repeat;
         background-position: center;
@@ -96,10 +102,11 @@ body {
         display: flex;
         align-items: flex-end;
         position: relative;
-        transition: all .3s;
 
         &:hover {
-            transform: scale(1.1);
+            border-radius: 16px;
+            border: 3px solid #44D2FF;
+            cursor: url(img/clarity_cursor-hand-linePNG.png), pointer;
         }
 
         &_1 {
@@ -119,6 +126,38 @@ body {
             left: 32px;
             bottom: 32px;
         }
+    }
+}
+
+.game-content {
+    background-image: url(img/game-contentBack.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 233.56px;
+    padding-bottom: 233.5px;
+
+    &__box {
+        display: grid;
+        align-content: center;
+        gap: 32px;
+    }
+
+    &__name {
+        color: #FFF;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__text {
+        max-width: 584px;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
     }
 }
 
