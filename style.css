@@ -147,6 +147,9 @@ body {
   font-weight: 300;
   line-height: 32px;
 }
+.game-content_reverse {
+  flex-direction: row-reverse;
+}
 
 @media (min-width: 768px) and (max-width: 1220px) {
   .center {

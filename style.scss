@@ -159,6 +159,10 @@ body {
         font-weight: 300;
         line-height: 32px;
     }
+
+    &_reverse {
+        flex-direction: row-reverse;
+    }
 }
 
 @import 'tablet';
